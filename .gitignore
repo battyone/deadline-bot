@@ -1,2 +1,4 @@
+firebase.json
 node_modules
 .vscode
+.env

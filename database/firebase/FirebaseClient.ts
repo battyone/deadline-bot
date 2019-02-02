@@ -3,7 +3,7 @@ import IDataProvider from '../IDataProvider';
 import * as admin from 'firebase-admin';
 
 
-class FirebaseClient implements IDataProvider {
+export default class FirebaseClient implements IDataProvider {
 
     private readonly database;
 

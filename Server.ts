@@ -14,7 +14,6 @@ export default class Server {
         this.confirmCode = confirmCode;
 
         this.app.use(bodyParser.json());
-
         this.app.post('/', this.post);
     }
 
