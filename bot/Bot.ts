@@ -1,4 +1,4 @@
-import IDataProvider from './database/IDataProvider';
+import IDataProvider from '../database/IDataProvider';
 
 export default class Bot {
 

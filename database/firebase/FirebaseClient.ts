@@ -7,10 +7,10 @@ export default class FirebaseClient implements IDataProvider {
 
     private readonly database;
 
-    constructor(name: string, account: string) {
+    constructor(account: admin.ServiceAccount) {
         admin.initializeApp({
             credential: admin.credential.cert(account),
-            databaseURL: `https://${name}.firebaseio.com`
+            databaseURL: `https://${account.projectId}.firebaseio.com`
         });
 
         this.database = admin.database();
